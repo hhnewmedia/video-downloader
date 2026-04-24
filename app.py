@@ -22,6 +22,7 @@ if st.button("開始處理"):
             "yt-dlp", 
             "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best", 
             "--merge-output-format", "mp4",
+            "--extractor-args", "youtube:player_client=android", 
             "-o", "temp_video.mp4", 
             url
         ]
